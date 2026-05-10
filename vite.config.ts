@@ -6,11 +6,8 @@ import tailwind from "@tailwindcss/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-  plugins: [
-    tanstackStart(),
-    cloudflare(),
-    tailwind(),
-    tsconfigPaths(),
-    react(),
-  ],
+  plugins: [tanstackStart(), cloudflare(), tailwind(), tsconfigPaths(), react()],
+  optimizeDeps: {
+    noDiscovery: true,
+  },
 });
