@@ -1,12 +1,4 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "dist/server",
-  "framework": "vite",
-  "functions": {
-    "dist/server/server.js": {
-      "runtime": "nodejs20.x",
-      "memory": 1024,
-      "maxDuration": 60
-    }
-  }
+  "outputDirectory": "dist/client"
 }
